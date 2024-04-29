@@ -1,0 +1,29 @@
+[0m14:28:52.248840 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105b93530>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc7380>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x105bc70b0>]}
+
+
+============================== 14:28:52.251817 | 596ea664-bce4-46ec-954b-0f9e5113e43c ==============================
+[0m14:28:52.251817 [info ] [MainThread]: Running with dbt=1.7.13
+[0m14:28:52.252122 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/alya/.dbt', 'debug': 'False', 'version_check': 'True', 'log_path': 'logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt init', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m14:29:08.675434 [debug] [MainThread]: Starter project path: /Users/alya/myenv/lib/python3.12/site-packages/dbt/include/starter_project
+[0m14:29:08.688510 [info ] [MainThread]: 
+Your new dbt project "nyc_taxi_data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:29:08.689429 [info ] [MainThread]: Setting up your profile.
+[0m14:29:28.620321 [info ] [MainThread]: Profile nyc_taxi_data written to /Users/alya/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:29:28.623153 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 36.401894, "process_user_time": 2.773806, "process_kernel_time": 0.434073, "process_mem_max_rss": "179617792", "process_in_blocks": "0", "process_out_blocks": "0"}
+[0m14:29:28.623856 [debug] [MainThread]: Command `dbt init` succeeded at 14:29:28.623696 after 36.40 seconds
+[0m14:29:28.624278 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x10598d8e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x114ac5af0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x117c8c680>]}
+[0m14:29:28.624729 [debug] [MainThread]: Flushing usage events

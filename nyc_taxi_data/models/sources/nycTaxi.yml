@@ -1,0 +1,43 @@
+version: 2
+
+sources:
+  - name: nycTaxi
+    tables:
+      - name: raw_nyc_taxi_trip
+        columns:
+          - name: VendorID
+            tests:
+              - accepted_values:
+                  values: [1, 2]
+          - name: lpep_pickup_datetime
+            tests:
+              - not_null
+          - name: lpep_dropoff_datetime
+            tests:
+              - not_null
+          - name: store_and_fwd_flag
+            tests:
+              - accepted_values:
+                  values: ['N', 'Y']
+          - name: RatecodeID
+            tests:
+              - accepted_values:
+                  values: [1, 2, 3, 4, 5]
+          - name: PULocationID
+            tests:
+              - not_null
+          - name: DOLocationID
+            tests:
+              - not_null
+          - name: passenger_count
+          - name: trip_distance
+          - name: fare_amount
+          - name: extra
+          - name: mta_tax
+          - name: tip_amount
+          - name: tolls_amount
+          - name: ehail_fee
+          - name: improvement_surcharge
+          - name: payment_type
+          - name: trip_type
+          - name: congestion_surcharge
