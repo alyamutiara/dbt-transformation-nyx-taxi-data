@@ -7,8 +7,8 @@ sources:
         columns:
           - name: VendorID
             tests:
-              - accepted_values:
-                  values: [1, 2]
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: lpep_pickup_datetime
             tests:
               - not_null
@@ -19,10 +19,12 @@ sources:
             tests:
               - accepted_values:
                   values: ['N', 'Y']
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: RatecodeID
             tests:
-              - accepted_values:
-                  values: [1, 2, 3, 4, 5]
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: PULocationID
             tests:
               - not_null
@@ -30,14 +32,47 @@ sources:
             tests:
               - not_null
           - name: passenger_count
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: trip_distance
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: fare_amount
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: extra
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: mta_tax
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: tip_amount
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: tolls_amount
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: ehail_fee
           - name: improvement_surcharge
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: payment_type
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: trip_type
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
           - name: congestion_surcharge
+            tests:
+              - dbt_utils.not_null_proportion:
+                  at_least: 0.60
